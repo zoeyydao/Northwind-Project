@@ -368,7 +368,7 @@ WHERE PriceRank = 1;
 ```
 Result:
 
-![q13](northwind%20images/q13.pngg)
+![q13](northwind%20images/q13.png)
 
 **14. Products with Higher Than Average Price: Which products have a price higher than the average price in their category?**
 
