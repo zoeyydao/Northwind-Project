@@ -21,8 +21,7 @@ This project involves a comprehensive deep dive into the company’s relational 
 
 This diagram presents the Entity Relationship Diagram (ERD) for the dataset.
 
-> Insert ERD image here  
-> Example: `![Northwind ERD](images/northwind-erd.png)`
+![erd](northwind%20images/erd.png)
 
 
 
@@ -54,7 +53,8 @@ LIMIT 10;
 ``` 
 
 Result:
-![Insert Image Here](link-to-your-image.png)
+
+![q1](northwind%20images/q1.png)
 
 **2. Geographic Distribution: Which countries generate the most revenue for Northwind?**
 
@@ -72,7 +72,8 @@ LIMIT 10;
 ``` 
 
 Result:
-![Insert Image Here](link-to-your-image.png)
+
+![q2](northwind%20images/q2.png)
 
 **3. Customer Loyalty: Identify customers who have been ordering consistently over time (orders in at least 3 different quarters). Return their company name and the number of quarters they've placed orders in.**
 
@@ -90,7 +91,8 @@ HAVING NumberOfQuarters >= 3
 ORDER BY NumberOfQuarters DESC;
 ```
 Result:
-![Insert Image Here](link-to-your-image.png)
+
+![q3](northwind%20images/q3.png)
 
 ## Section 2: Product Performance Analysis
 
@@ -111,7 +113,8 @@ ORDER BY TotalRevenue DESC
 LIMIT 5;
 ```
 Result:
-![Insert Image Here](link-to-your-image.png)
+
+![q4](northwind%20images/q4.png)
 
 **5. Seasonal Trends: Do certain products show seasonal sales patterns? Write a query that analyses quarterly sales by product category over the past two years.**
 
@@ -151,7 +154,8 @@ GROUP BY cat.CategoryName
 ORDER BY cat.CategoryName;
 ```
 Result:
-![Insert Image Here](link-to-your-image.png)
+
+![q5](northwind%20images/q5.png)
 
 ## Section 3: Sales Performance Analysis
 
@@ -175,7 +179,8 @@ GROUP BY YearMonth
 ORDER BY YearMonth DESC;
 ```
 Result:
-![Insert Image Here](link-to-your-image.png)
+
+![q6](northwind%20images/q6.png)
 
 **7. Discount Impact: How do discounts affect order size? Compare the average order value for orders with and without discounts.**
 
@@ -210,7 +215,8 @@ GROUP BY 1
 ORDER BY AvgDiscountRate;
 ```
 Result:
-![Insert Image Here](link-to-your-image.png)
+
+![q7](northwind%20images/q7.png)
 
 **8. Shipping Analysis: Which shipping company delivers orders most quickly? Calculate the average days between shipping date and required date for each shipper.**
 
@@ -233,7 +239,8 @@ GROUP BY S.CompanyName
 ORDER BY AvgDaysToRequired DESC;
 ```
 Result:
-![Insert Image Here](link-to-your-image.png)
+
+![q8](northwind%20images/q8.png)
 
 ## Section 4: Employee Performance Analysis
 
@@ -265,7 +272,8 @@ FROM EmployeeSales
 ORDER BY SalesRank;
 ```
 Result:
-![Insert Image Here](link-to-your-image.png)
+
+![q9](northwind%20images/q9.png)
 
 **10. Territory Performance: Which sales territories are performing best? For each territory, calculate the total sales, number of orders, and average order value.**
 
@@ -289,7 +297,8 @@ GROUP BY t.TerritoryDescription
 ORDER BY TotalOrders DESC;
 ```
 Result:
-![Insert Image Here](link-to-your-image.png)
+
+![q10](northwind%20images/q10.png)
 
 **11. Products Needing Reorder: Which products need to be reordered based on their current stock levels?**
 
@@ -307,7 +316,8 @@ WHERE UnitsInStock <= ReorderLevel AND Discontinued = 0
 ORDER BY UnitsInStock ASC;
 ```
 Result:
-![Insert Image Here](link-to-your-image.png)
+
+![q11](northwind%20images/q11.png)
 
 **12. Suppliers with Most Products: Which suppliers provide the most products to Northwind, and how many discontinued products do they have?**
 
@@ -327,7 +337,8 @@ GROUP BY s.SupplierID, s.CompanyName, s.Country
 ORDER BY TotalProducts DESC;
 ```
 Result:
-![Insert Image Here](link-to-your-image.png)
+
+![q12](northwind%20images/q12.png)
 
 **13. Most Expensive Products by Category: For each category, what is the most expensive product?**
 
@@ -355,7 +366,8 @@ FROM RankedProducts
 WHERE PriceRank = 1;
 ```
 Result:
-![Insert Image Here](link-to-your-image.png)
+
+![q13](northwind%20images/q13.pngg)
 
 **14. Products with Higher Than Average Price: Which products have a price higher than the average price in their category?**
 
@@ -383,5 +395,6 @@ WHERE UnitPrice > CategoryAvgPrice
 ORDER BY CategoryName, UnitPrice DESC;
 ```
 Result:
-![Insert Image Here](link-to-your-image.png)
+
+![q14](northwind%20images/q14.png)
 
