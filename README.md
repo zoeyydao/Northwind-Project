@@ -1,5 +1,6 @@
 # Northwind Traders: SQL Data Analysis Case Study
 
+![img](northwind%20images/img.png)
 
 ## Project Overview
 
