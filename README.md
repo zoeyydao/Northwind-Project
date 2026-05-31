@@ -10,7 +10,9 @@ This project involves a comprehensive deep dive into the company’s relational 
 
 ## Technical Stack
 
-**Language:** SQL (SQLite)
+**Language:** SQL (Databricks SQL)
+
+**Platform:** Databricks
 
 **Key Techniques Used:**
 - Advanced Aggregations & Joins  
